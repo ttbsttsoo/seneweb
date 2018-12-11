@@ -1,17 +1,27 @@
 import React, { Component } from "react";
 
-import { Button, Icon } from "react-materialize";
+import { Button } from "react-materialize";
+
+import CategoriesNavbar from "./CategoriesNavbar";
 
 class App extends Component {
+  state = {
+    categories: [
+      "Actualite",
+      "Societe",
+      "Sport",
+      "Politique",
+      "Photos",
+      "Videos",
+      "Blogs",
+      "Faits-Divers",
+      "People"
+    ]
+  };
   render() {
     return (
-      <div className="App">
-        <p>Testing React Installed OK</p>
-        <div>
-          <Button>Material</Button>
-        </div>
-        <Button floating className="pink lighten-2 z-depth-2" icon="favorite" />
-        <p>OK</p>
+      <div class="seneweb">
+        <CategoriesNavbar categories={this.state.categories} />
       </div>
     );
   }
