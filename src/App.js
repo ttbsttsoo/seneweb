@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-import { Button } from "react-materialize";
-
 import CategoriesNavbar from "./CategoriesNavbar";
 
 class App extends Component {
