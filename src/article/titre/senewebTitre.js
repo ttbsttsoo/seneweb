@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col, Button } from "react-materialize";
+import { Link } from "react-router-dom";
 
 const Titre = ({ titre, topic }) => {
   return (
@@ -8,7 +9,7 @@ const Titre = ({ titre, topic }) => {
         <Button flat className="orange accent-4 white-text">
           {topic}
         </Button>
-        {titre}
+        <Link to="#"> {titre}</Link>
       </Col>
     </Row>
   );

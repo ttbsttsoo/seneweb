@@ -5,6 +5,8 @@ import PageDAcceuil from "./pageDAcceuil/senewebPageDAcceuil";
 import { Row } from "react-materialize";
 import Col from "react-materialize/lib/Col";
 
+import { BrowserRouter } from "react-router-dom";
+
 class App extends Component {
   state = {
     categories: [
@@ -21,14 +23,16 @@ class App extends Component {
   };
   render() {
     return (
-      <div className="">
-        <Row>
-          <Col s={12}>
-            <Navigation categories={this.state.categories} />
-          </Col>
-        </Row>
-        <PageDAcceuil />
-      </div>
+      <BrowserRouter>
+        <div className="">
+          <Row>
+            <Col s={12}>
+              <Navigation categories={this.state.categories} />
+            </Col>
+          </Row>
+          <PageDAcceuil />
+        </div>
+      </BrowserRouter>
     );
   }
 }
