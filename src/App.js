@@ -21,7 +21,7 @@ class App extends Component {
   };
   render() {
     return (
-      <div className="seneweb">
+      <div className="">
         <Row>
           <Col s={12}>
             <Navigation categories={this.state.categories} />
