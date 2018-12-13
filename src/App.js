@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Navigation from "./navigation/senewebNavigation";
+import PageDAcceuil from "./pageDAcceuil/senewebPageDAcceuil";
 import Article from "./article/senewebArticle";
 import ArticleImage from "./img/mane.jpg";
 import { Row } from "react-materialize";
@@ -28,11 +29,7 @@ class App extends Component {
             <Navigation categories={this.state.categories} />
           </Col>
         </Row>
-        <Row>
-          <Col s={4}>
-            <Article id={1} />
-          </Col>
-        </Row>
+        <PageDAcceuil />
       </div>
     );
   }
