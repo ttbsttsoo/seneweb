@@ -8,7 +8,8 @@ import UneDate from "./uneDate/senewebDate";
 
 import { connect } from "react-redux";
 
-const Article = ({ article }) => {
+const Article = ({ id, article }) => {
+  console.log("id:", id);
   return (
     <div className="">
       <Titre topic={article.topic} titre={article.titre} />
@@ -20,9 +21,9 @@ const Article = ({ article }) => {
   );
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state, ownProps) => {
   return {
-    article: state.articles[0]
+    article: state.articles.find(article => article.id === ownProps.id)
   };
 };
 
