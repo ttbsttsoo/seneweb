@@ -11,7 +11,7 @@ const initState = {
       topic: "Sport",
       date: "9h",
       reactions: {
-        ncommentaires: 2
+        ncommentaires: 3
       }
     }
   ]
