@@ -9,7 +9,7 @@ const Titre = ({ titre, topic }) => {
         <Button flat className="orange accent-4 white-text">
           {topic}
         </Button>
-        <Link to="#"> {titre}</Link>
+        <Link to="/article_id"> {titre}</Link>
       </Col>
     </Row>
   );
