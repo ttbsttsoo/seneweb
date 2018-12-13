@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import Titre from "./titre/senewebTitre";
 import Image from "./image/senewebImage";

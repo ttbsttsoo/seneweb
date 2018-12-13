@@ -2,8 +2,6 @@ import React, { Component } from "react";
 
 import Navigation from "./navigation/senewebNavigation";
 import PageDAcceuil from "./pageDAcceuil/senewebPageDAcceuil";
-import Article from "./article/senewebArticle";
-import ArticleImage from "./img/mane.jpg";
 import { Row } from "react-materialize";
 import Col from "react-materialize/lib/Col";
 

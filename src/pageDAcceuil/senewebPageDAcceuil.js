@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import ArticleImage from "../img/mane.jpg";
 import { Row, Col } from "react-materialize";
 import Article from "../article/senewebArticle";
 
