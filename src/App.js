@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 
 import CategoriesNavbar from "./CategoriesNavbar";
-import ResumeDArticle from "./ResumeDArticle";
-
+import Article from "./article/senewebArticle";
 import ArticleImage from "./img/mane.jpg";
 import { Row } from "react-materialize";
 import Col from "react-materialize/lib/Col";
@@ -21,13 +20,15 @@ class App extends Component {
       "People"
     ],
     article: {
-      resume:
+      contenu:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sed veritatis aspernatur ",
       image: ArticleImage,
       titre: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       topic: "Sport",
       date: "9h",
-      ncommentaires: 2
+      reactions: {
+        ncommentaires: 2
+      }
     }
   };
   render() {
@@ -40,7 +41,7 @@ class App extends Component {
         </Row>
         <Row>
           <Col s={4}>
-            <ResumeDArticle article={this.state.article} />
+            <Article article={this.state.article} />
           </Col>
         </Row>
       </div>
