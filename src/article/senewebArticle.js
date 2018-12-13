@@ -10,7 +10,6 @@ import { connect } from "react-redux";
 
 const Article = ({ id, article }) => {
   console.log("id:", id);
-  console.log("article:", article);
   return (
     <div className="">
       <Titre topic={article.topic} titre={article.titre} />
@@ -24,7 +23,7 @@ const Article = ({ id, article }) => {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    article: state.articles.find(article => article.id === 2)
+    article: state.articles.find(article => article.id === ownProps.id)
   };
 };
 

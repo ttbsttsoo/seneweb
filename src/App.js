@@ -18,18 +18,7 @@ class App extends Component {
       "Blogs",
       "Faits-Divers",
       "People"
-    ],
-    article: {
-      contenu:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sed veritatis aspernatur ",
-      image: ArticleImage,
-      titre: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      topic: "Sport",
-      date: "9h",
-      reactions: {
-        ncommentaires: 2
-      }
-    }
+    ]
   };
   render() {
     return (
@@ -41,7 +30,7 @@ class App extends Component {
         </Row>
         <Row>
           <Col s={4}>
-            <Article article={this.state.article} />
+            <Article id={1} />
           </Col>
         </Row>
       </div>
