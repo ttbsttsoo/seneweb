@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import CategoriesNavbar from "./CategoriesNavbar";
+import Navigation from "./navigation/senewebNavigation";
 import Article from "./article/senewebArticle";
 import ArticleImage from "./img/mane.jpg";
 import { Row } from "react-materialize";
@@ -36,7 +36,7 @@ class App extends Component {
       <div className="seneweb">
         <Row>
           <Col s={12}>
-            <CategoriesNavbar categories={this.state.categories} />
+            <Navigation categories={this.state.categories} />
           </Col>
         </Row>
         <Row>
