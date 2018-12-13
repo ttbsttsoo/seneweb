@@ -1,4 +1,6 @@
 import ArticleImage from "../img/mane.jpg";
+import PubliciteGif from "../img/publicite.gif";
+import CetudImage from "../img/cetud.jpg";
 
 const initState = {
   articles: [
@@ -28,6 +30,39 @@ const initState = {
     },
     {
       id: 3,
+      contenu:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sed veritatis aspernatur ",
+      image: ArticleImage,
+      titre: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      topic: "Sport",
+      date: "22h",
+      reactions: {
+        ncommentaires: 5
+      }
+    },
+    {
+      id: 5,
+      contenu: "",
+      image: PubliciteGif,
+      titre: "",
+      topic: "",
+      reactions: {
+        ncommentaires: ""
+      }
+    },
+    {
+      id: 4,
+      contenu: "",
+      image: CetudImage,
+      titre: "",
+      topic: "",
+      date: "",
+      reactions: {
+        ncommentaires: ""
+      }
+    },
+    {
+      id: 6,
       contenu:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sed veritatis aspernatur ",
       image: ArticleImage,

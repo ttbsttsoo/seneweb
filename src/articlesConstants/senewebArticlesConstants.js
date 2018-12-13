@@ -5,7 +5,7 @@ import Article from "../article/senewebArticle";
 
 class ArticlesConstants extends Component {
   state = {
-    article_ids: [1, 2, 3]
+    article_ids: [4, 5, 6]
   };
   render() {
     return (
@@ -13,7 +13,7 @@ class ArticlesConstants extends Component {
         {this.state.article_ids.map(id => {
           return (
             <Col s={12}>
-              <p>Article Constant</p>
+              <Article id={id} />
             </Col>
           );
         })}

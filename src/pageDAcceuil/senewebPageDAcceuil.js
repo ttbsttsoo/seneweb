@@ -13,7 +13,7 @@ class PageDAcceuil extends Component {
           <ArticlesDAcceuil />
         </Col>
         <Col s={4}>
-          <ArticlesConstants className="right" />
+          <ArticlesConstants />
         </Col>
       </Row>
     );
