@@ -13,6 +13,18 @@ const initState = {
       reactions: {
         ncommentaires: 3
       }
+    },
+    {
+      id: 2,
+      contenu:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sed veritatis aspernatur ",
+      image: ArticleImage,
+      titre: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      topic: "Sport",
+      date: "15h",
+      reactions: {
+        ncommentaires: 5
+      }
     }
   ]
 };

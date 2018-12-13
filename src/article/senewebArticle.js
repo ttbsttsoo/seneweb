@@ -8,26 +8,23 @@ import UneDate from "./uneDate/senewebDate";
 
 import { connect } from "react-redux";
 
-class Article extends Component {
-  render() {
-    return (
-      <div className="">
-        <Titre
-          topic={this.props.article.topic}
-          titre={this.props.article.titre}
-        />
-        <Image image={this.props.article.image} />
-        <Contenu contenu={this.props.article.contenu} />
-        <UneDate date={this.props.article.date} />
-        <Reactions reactions={this.props.article.reactions} />
-      </div>
-    );
-  }
-}
+const Article = ({ id, article }) => {
+  console.log("id:", id);
+  console.log("article:", article);
+  return (
+    <div className="">
+      <Titre topic={article.topic} titre={article.titre} />
+      <Image image={article.image} />
+      <Contenu contenu={article.contenu} />
+      <UneDate date={article.date} />
+      <Reactions reactions={article.reactions} />
+    </div>
+  );
+};
 
-const mapStateToProps = state => {
+const mapStateToProps = (state, ownProps) => {
   return {
-    article: state.articles[0]
+    article: state.articles.find(article => article.id === 2)
   };
 };
 
