@@ -9,9 +9,9 @@ import UneDate from "./uneDate/senewebDate";
 import { connect } from "react-redux";
 
 const Article = ({ id, article }) => {
-  console.log("id:", id);
+  // console.log("id:", id);
   return (
-    <div className="">
+    <div className="" key={id}>
       <Titre topic={article.topic} titre={article.titre} />
       <Image image={article.image} />
       <Contenu contenu={article.contenu} />
@@ -23,7 +23,7 @@ const Article = ({ id, article }) => {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    article: state.articles.find(article => article.id === ownProps.id)
+    article: state.articles.find(article => article.id == ownProps.id)
   };
 };
 
