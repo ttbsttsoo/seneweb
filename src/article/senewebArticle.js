@@ -12,7 +12,7 @@ const Article = ({ id, article }) => {
   // console.log("id:", id);
   return (
     <div className="" key={id}>
-      <Titre topic={article.topic} titre={article.titre} />
+      <Titre article_id={id} topic={article.topic} titre={article.titre} />
       <Image image={article.image} />
       <Contenu contenu={article.contenu} />
       <UneDate date={article.date} />
