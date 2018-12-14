@@ -5,7 +5,7 @@ import Article from "../article/senewebArticle";
 
 class ArticlesDAcceuil extends Component {
   state = {
-    article_ids: [1, 2, 3]
+    article_ids: [1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]
   };
   render() {
     return (
