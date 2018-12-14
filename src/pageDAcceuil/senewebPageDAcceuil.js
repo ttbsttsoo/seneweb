@@ -13,7 +13,7 @@ class PageDAcceuil extends Component {
       <Row>
         <Col s={8}>
           <Route exact path="/" component={ArticlesDAcceuil} />
-          <Route path="/article_id" component={PageDetailsArticle} />
+          <Route path="/:article_id" component={PageDetailsArticle} />
         </Col>
         <Col s={4}>
           <ArticlesConstants />
