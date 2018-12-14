@@ -3,6 +3,18 @@ import PubliciteGif from "../img/publicite.gif";
 import CetudImage from "../img/cetud.jpg";
 
 const initState = {
+  categories: [
+    "Actualite",
+    "Societe",
+    "Sport",
+    "Politique",
+    "Photos",
+    "Videos",
+    "Blogs",
+    "Faits-Divers",
+    "People",
+    "CONSULTEZ LES BLOGS"
+  ],
   articles: [
     {
       id: 1,

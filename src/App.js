@@ -8,26 +8,13 @@ import Col from "react-materialize/lib/Col";
 import { BrowserRouter } from "react-router-dom";
 
 class App extends Component {
-  state = {
-    categories: [
-      "Actualite",
-      "Societe",
-      "Sport",
-      "Politique",
-      "Photos",
-      "Videos",
-      "Blogs",
-      "Faits-Divers",
-      "People"
-    ]
-  };
   render() {
     return (
       <BrowserRouter>
         <div className="">
           <Row>
             <Col s={12}>
-              <Navigation categories={this.state.categories} />
+              <Navigation />
             </Col>
           </Row>
           <PageDAcceuil />
