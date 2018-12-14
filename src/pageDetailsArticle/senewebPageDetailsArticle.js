@@ -5,15 +5,14 @@ import { Row, Col } from "react-materialize";
 import { connect } from "react-redux";
 
 import Article from "../article/senewebArticleDetails";
+import PostsRecents from "./postsRecents/senewebPostsRecents";
 
 class PageDetailsArticle extends Component {
   render() {
     return (
-      <Row>
-        <Col>
-          <Article id={this.props.match.params.article_id} />;
-        </Col>
-      </Row>
+      <div>
+        <Article id={this.props.match.params.article_id} />;<PostsRecents />
+      </div>
     );
   }
 }
