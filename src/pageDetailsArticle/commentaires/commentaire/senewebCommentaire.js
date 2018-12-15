@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import ProfileImage from "../../../img/mctr.jpg";
 import Button from "react-materialize/lib/Button";
 import { Modal } from "react-materialize";
+import CreerCommentaire from "../creerCommentaire/senewebCreerCommentaire";
 
 class Commentaire extends Component {
   render() {
@@ -33,7 +34,7 @@ class Commentaire extends Component {
               <Button className="col l2 white black-text">Repondre</Button>
             }
           >
-            <p>Champs edit commentaire</p>
+            <CreerCommentaire />
           </Modal>
 
           <div className="col l1 center">
