@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 
 import ProfileImage from "../../../img/mctr.jpg";
+import Button from "react-materialize/lib/Button";
+import { Modal } from "react-materialize";
 
 class Commentaire extends Component {
   render() {
@@ -25,7 +27,15 @@ class Commentaire extends Component {
           </div>
         </div>
         <div className="row">
-          <div className="col l2 btn white black-text">Repondre</div>
+          <Modal
+            header="Repondre commentaire"
+            trigger={
+              <Button className="col l2 white black-text">Repondre</Button>
+            }
+          >
+            <p>Champs edit commentaire</p>
+          </Modal>
+
           <div className="col l1 center">
             +2<i className="material-icons">thumb_up</i>
           </div>
