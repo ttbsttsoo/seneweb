@@ -1,6 +1,7 @@
 import ArticleImage from "../img/mane.jpg";
 import PubliciteGif from "../img/publicite.gif";
 import CetudImage from "../img/cetud.jpg";
+import SeneFoot from "../img/senefoot.jpg";
 
 const initState = {
   categories: [
@@ -77,7 +78,7 @@ const initState = {
       id: 6,
       contenu:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sed veritatis aspernatur ",
-      image: ArticleImage,
+      image: SeneFoot,
       titre: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       topic: "Sport",
       date: "22h",

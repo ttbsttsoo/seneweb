@@ -5,7 +5,7 @@ import Article from "../article/senewebArticle";
 
 class ArticlesConstants extends Component {
   state = {
-    article_ids: [4, 5, 6]
+    article_ids: [4, 5, 6, 6, 6]
   };
   render() {
     return (
