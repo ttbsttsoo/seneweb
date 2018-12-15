@@ -6,7 +6,11 @@ const Image = ({ image }) => {
   return (
     <Row>
       <Col>
-        <img src={image} alt="Image de l'article" className="responsive-img" />
+        <img
+          src={image}
+          alt="Image de l'article"
+          className="responsive-img materialboxed"
+        />
       </Col>
     </Row>
   );
