@@ -4,7 +4,12 @@ import { Row, Col, Navbar } from "react-materialize";
 import Article from "../../article/senewebArticleDetails";
 import Icon from "react-materialize/lib/Icon";
 
+import Commentaire from "./commentaire/senewebCommentaire";
+
 class Commentaires extends Component {
+  state = {
+    article_ids: [1, 2, 3, 1, 2, 3]
+  };
   render() {
     return (
       <Row>
@@ -15,6 +20,9 @@ class Commentaires extends Component {
             <Icon className="right">dehaze</Icon>
           </Navbar>
         </Col>
+        {this.state.article_ids.map(id => {
+          return <Commentaire />;
+        })}
       </Row>
     );
   }
