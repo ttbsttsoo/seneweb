@@ -13,7 +13,7 @@ const Article = ({ id, article }) => {
     <div className="" key={id}>
       <Titre article_id={id} topic={article.topic} titre={article.titre} />
       <Image image={article.image} />
-      <Contenu contenu={article.contenu} />
+      <Contenu contenu={article.contenu.repeat(20)} />
       <UneDate date={article.date} />
       <Reactions reactions={article.reactions} />
     </div>

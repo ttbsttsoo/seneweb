@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import { Row, Col, Navbar } from "react-materialize";
-import Article from "../../article/senewebArticleDetails";
+import Article from "../../article/senewebArticle";
 import Icon from "react-materialize/lib/Icon";
 import Button from "react-materialize/lib/Button";
 
