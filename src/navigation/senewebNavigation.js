@@ -13,7 +13,15 @@ const Navigation = ({ categories }) => {
         <Icon className="left">home</Icon>
       </NavItem>
       {categories.map(categorie => {
-        return <NavItem>{categorie}</NavItem>;
+        return (
+          <NavItem
+            onClick={() => {
+              alert("Not implemented");
+            }}
+          >
+            {categorie}
+          </NavItem>
+        );
       })}
     </Navbar>
   );
