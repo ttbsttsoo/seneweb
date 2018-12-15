@@ -8,7 +8,7 @@ import Commentaire from "./commentaire/senewebCommentaire";
 
 class Commentaires extends Component {
   state = {
-    article_ids: [1, 2, 3, 1, 2, 3]
+    article_ids: [1, 2, 3, 1, 2, 3, 1, 2, 3]
   };
   render() {
     return (
